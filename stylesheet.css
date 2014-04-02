@@ -1,0 +1,119 @@
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	background: #0198DF;
+	color: white;
+	font-size: 18px;
+}
+#wrapper
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.94;
+}
+	#screenWrapper
+	{
+		margin: 0px;
+		padding: 8px 12px 8px 12px;
+		background: linear-gradient(#D0D0D0, #0198DF);
+	}
+		#screen
+		{
+			background: white;
+			color: #0096DC;
+			border-radius: 10px;
+			box-shadow: 0px 0px 8px #0096DC;
+			font-size: 28px;
+			font-weight: bold;
+			height: 48px;
+			line-height: 48px;
+			margin: 0px 0px 0px 0px;
+			text-align: right;
+			padding: 0px 12px 0px 12px;
+		}
+	#buttonsWrapper
+	{
+		text-align: center;
+	}
+		#buttons 
+		{
+		}
+			.button
+			{
+				color: white;
+				background: linear-gradient(#43A6E2, #277AC1);
+				border: 0px;
+				border-radius: 0.25em;
+				box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+				display: inline-block;
+				background-color: #277AC1;
+				line-height: 1.1em;
+				text-align: center;
+				text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+				width: 23%;
+				height: 38px;
+				font-size: 38px;
+				padding: 1% 0px 1% 0px;
+				margin: 4px 0px 4px 0px;
+				transition: all 0.3s;
+			}
+				.button:active
+				{
+					transform: rotate(-15deg);
+				}
+				.button.wide
+				{
+					width: 48%;
+				}
+				.button.actionButton
+				{
+					background: linear-gradient(#409DD6, #2572B5);
+				}
+				.button.clearButton
+				{
+					background: linear-gradient(#409DD6, #2572B5);
+					height: 38px;
+					line-height: 38px;
+					font-size: 32px;
+					vertical-align: top;
+				}
+			.buttonDisabled
+			{
+				opacity: 0.6;
+			}
+#background
+{
+	background: #0198DF;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -50;
+}
+	#foxtail
+	{
+		position: absolute;
+		background: url('img/foxtail.png');
+		height: 156px;
+		width: 156px;
+		bottom: 0px;
+		left: 0px;
+		margin: 10px 10px 10px 8px;
+		background-position: 0px 0px;
+	}
+.glow
+{
+	position: relative;
+	box-shadow: 0px 0px 4px 4px #0198DF;
+	z-index: 5;
+	margin: 0px -4px 0px -4px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Calculator</title>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript" src="Calculator.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="screenWrapper">
+			<p id="screen">
+				
+			</p>
+		</div>
+		<div id="buttonsWrapper">
+			<div id="buttons">
+				<p class="button digitButton" data-value="7" id="btn7">7</p>
+				<p class="button digitButton" data-value="8" id="btn8">8</p>
+				<p class="button digitButton" data-value="9" id="btn7">9</p>
+				<p class="button actionButton buttonDisabled" data-action="divide" id="btnDivide">/</p>
+				
+				<p class="button digitButton" data-value="4" id="btn4">4</p>
+				<p class="button digitButton" data-value="5" id="btn5">5</p>
+				<p class="button digitButton" data-value="6" id="btn6">6</p>
+				<p class="button actionButton buttonDisabled" data-action="multiply" id="btnMultiply">*</p>
+				
+				<p class="button digitButton" data-value="1" id="btn1">1</p>
+				<p class="button digitButton" data-value="2" id="btn2">2</p>
+				<p class="button digitButton" data-value="3" id="btn3">3</p>
+				<p class="button actionButton" data-action="substract" id="btnSubstract">-</p>
+				
+				<p class="button wide digitButton" data-value="0" id="btn0">0</p>
+				<p class="button" id="btnDot">.</p>
+				<p class="button actionButton buttonDisabled" data-action="add" id="btnAdd">+</p>
+				
+				<p class="button clearButton" id="btnC">C</p>
+				<p class="button clearButton" id="btnCE">CE</p>
+				<p class="button actionButton wide buttonDisabled" data-action="calculate" id="btnCalculate">=</p>
+			</div>
+		</div>
+		<div id="log">
+		</div>
+	</div>
+	<div id="background">
+		<div id="foxtail">
+		</div>
+	</div>
+</body>
+</html>
