@@ -13,17 +13,12 @@ body
 }
 #wrapper
 {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
 	opacity: 0.94;
 }
 	#screenWrapper
 	{
 		margin: 0px;
-		padding: 8px 12px 8px 12px;
+		padding: 8px 0px 8px 0px;
 		background: linear-gradient(#D0D0D0, #0198DF);
 	}
 		#screen
@@ -36,14 +31,13 @@ body
 			font-weight: bold;
 			height: 48px;
 			line-height: 48px;
-			margin: 0px 0px 0px 0px;
+			margin: 0px;
 			text-align: right;
 			padding: 0px 12px 0px 12px;
 		}
 	#buttonsWrapper
 	{
 		text-align: center;
-		height: 100%;
 	}
 		#buttons 
 		{
@@ -61,21 +55,19 @@ body
 				line-height: 1.1em;
 				text-align: center;
 				text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
-				width: 21%;
+				width: 100%;
 				height: 38px;
 				font-size: 38px;
-				padding: 1% 0px 1% 0px;
-				/*margin: 4px 0px 4px 0px;*/
-				margin: 0.5% 0.5% 0.5% 0.5%;
+				padding: 8px 0px 8px 0px;
+				/*margin: 1.2% 1.2% 1.2% 0px;*/
+				margin: 0px;
 				transition: all 0.3s;
+				box-sizing: content-box;
+				backface-visibility: visible;
 			}
 				.button:active
 				{
 					transform: rotate(-15deg);
-				}
-				.button.wide
-				{
-					width: 44%;
 				}
 				.button.actionButton
 				{
@@ -93,6 +85,10 @@ body
 			{
 				opacity: 0.6;
 			}
+				.buttonDisabled:active
+				{
+					transform: none;
+				}
 #background
 {
 	background: #0198DF;
@@ -106,7 +102,7 @@ body
 	#foxtail
 	{
 		position: absolute;
-		background: url('img/foxtail.png');
+		background: url('../img/foxtail.png');
 		height: 156px;
 		width: 156px;
 		bottom: 0px;
@@ -120,4 +116,15 @@ body
 	box-shadow: 0px 0px 4px 4px #0198DF;
 	z-index: 5;
 	margin: 0px -4px 0px -4px;
+}
+
+/*# Foundation overrides #*/
+.column, .columns
+{
+	padding-left: 1%;
+	padding-right: 1%;
+}
+#buttonsWrapper .row
+{
+	margin-top: 1.2%;
 }
